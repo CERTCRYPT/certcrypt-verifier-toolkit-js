@@ -21,8 +21,8 @@
       "certification": "2026-11-26T2237Z"
     },
     "CHANGELOG.md": {
-      "sha3_256": "f77aa5fd7d847624adc4765d93f96e6fa46d05089f1a7599e851468ea8546d99",
-      "certification": "2026-11-26T2237Z"
+      "sha3_256": "6252a713f0cb861083a7f9612b5416f454a69059f2120ab1d628c1cb5dfe0ecc",
+      "certification": "2026-11-27T0056Z"
     },
     "LICENSE": {
       "sha3_256": "781bb118a03ab698f629da9d9d2cb11112fbb43d8a0af960ad9c4942088ccdc7",
@@ -481,16 +481,20 @@
       "certification": "2026-11-26T2237Z"
     },
     "package-lock.json": {
-      "sha3_256": "6c7e92e1283e450880dff65d175a4c76d4bdc6d621a8af17b290034e0065f8b1",
-      "certification": "2026-11-26T2237Z"
+      "sha3_256": "2bfcaed7d3968beb9ad60db67fab8a87dc215b75a7e3dfcf170b9ea011f1d326",
+      "certification": "2026-11-27T0056Z"
     },
     "package.json": {
-      "sha3_256": "3d11e0ba728ca5480cec04673d4bde0489bd9c5e1cacfd503ba6a2a6c8f857be",
-      "certification": "2026-11-26T2237Z"
+      "sha3_256": "2bd2343d9b5814f08fdceb9d248e036f928e8e41bd5019e4c36622c653d05ac1",
+      "certification": "2026-11-27T0056Z"
     },
     "scripts/run-conformance.ts": {
       "sha3_256": "3d058d76542007a872c025cb2da75a5f75b4e0173e2d4338a65933c1a639b909",
       "certification": "2026-11-26T2237Z"
+    },
+    "scripts/run-tests.mjs": {
+      "sha3_256": "6dd36c943efcd38b1318216c8a2be0e1ee3894b8295951e37fc5a6db38d20f66",
+      "certification": "2026-11-27T0056Z"
     },
     "tsconfig.json": {
       "sha3_256": "e462782688b97e7bcc127b2908e9d9c6b34f6461e998e45ed46701d6239411ee",
@@ -502,6 +506,11 @@
       "id": "2026-11-26T2237Z",
       "files": 124,
       "subtree_root": "2d961c8112d7ebeb0bc7d2c9159d85ff7269b121099471b20c1f74f922b64089"
+    },
+    {
+      "id": "2026-11-27T0056Z",
+      "files": 4,
+      "subtree_root": "b086dc71c4dcda597d57524e9a8f7dbc58f75e47e74031b3d1df219df634b500"
     }
   ],
   "repository": "certcrypt-verifier-toolkit-js",

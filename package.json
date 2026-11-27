@@ -1,6 +1,6 @@
 {
   "name": "@certcrypt/verifier-toolkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript and TypeScript binding of the CERTCRYPT reference verifier toolkit. Evaluates artifacts under public rules, offline, fail-closed.",
   "homepage": "https://github.com/CERTCRYPT/certcrypt-verifier-toolkit-js",
   "repository": {
@@ -45,8 +45,8 @@
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build && npm run test:conformance",
-    "test": "node --import ./dist/core/crypto/provider/register-node.js --test \"dist/**/*.test.js\"",
-    "test:web": "CERTCRYPT_CRYPTO_BACKEND=web node --import ./dist/core/input/register-node-fs.js --test \"dist/**/*.test.js\"",
+    "test": "node scripts/run-tests.mjs --import ./dist/core/crypto/provider/register-node.js",
+    "test:web": "CERTCRYPT_CRYPTO_BACKEND=web node scripts/run-tests.mjs --import ./dist/core/input/register-node-fs.js",
     "test:conformance": "node --import ./dist/core/crypto/provider/register-node.js dist/scripts/run-conformance.js",
     "test:conformance:web": "CERTCRYPT_CRYPTO_BACKEND=web node --import ./dist/core/input/register-node-fs.js dist/scripts/run-conformance.js",
     "lint": "tsc --noEmit"
