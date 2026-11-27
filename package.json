@@ -1,11 +1,11 @@
 {
   "name": "@certcrypt/verifier-toolkit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JavaScript and TypeScript binding of the CERTCRYPT reference verifier toolkit. Evaluates artifacts under public rules, offline, fail-closed.",
   "homepage": "https://github.com/CERTCRYPT/certcrypt-verifier-toolkit-js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CERTCRYPT/certcrypt-verifier-toolkit-js.git"
+    "url": "git+https://github.com/CERTCRYPT/certcrypt-verifier-toolkit-js.git"
   },
   "type": "module",
   "main": "dist/core/verify-node.js",

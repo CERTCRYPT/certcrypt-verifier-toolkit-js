@@ -5,6 +5,10 @@ This package follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Entries are one line per change: `type:scope: what changed`, where `type` is
 `feature`, `bugfix`, `breaking`, `deprecation`, `security` or `docs`.
 
+## 1.0.2
+
+* bugfix:Packaging: `repository.url` is written in the `git+https://` form the npm registry records, so publishing needs no correction of `package.json`
+
 ## 1.0.1
 
 * bugfix:Tests: `npm test` and `npm run test:web` list the compiled tests and pass them to the Node.js test runner by name (`scripts/run-tests.mjs`), so the suite runs on Node.js 20, the floor declared in `engines`, as on later versions
