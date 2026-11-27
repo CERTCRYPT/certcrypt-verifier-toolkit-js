@@ -1,0 +1,73 @@
+{
+  "name": "@certcrypt/verifier-toolkit",
+  "version": "1.0.0",
+  "description": "JavaScript and TypeScript binding of the CERTCRYPT reference verifier toolkit. Evaluates artifacts under public rules, offline, fail-closed.",
+  "homepage": "https://github.com/CERTCRYPT/certcrypt-verifier-toolkit-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CERTCRYPT/certcrypt-verifier-toolkit-js.git"
+  },
+  "type": "module",
+  "main": "dist/core/verify-node.js",
+  "types": "dist/core/verify-node.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/core/verify-node.d.ts",
+      "browser": "./dist/core/verify-web.js",
+      "node": "./dist/core/verify-node.js",
+      "default": "./dist/core/verify-web.js"
+    },
+    "./web": {
+      "types": "./dist/core/verify-web.d.ts",
+      "default": "./dist/core/verify-web.js"
+    },
+    "./node": {
+      "types": "./dist/core/verify-node.d.ts",
+      "default": "./dist/core/verify-node.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "certcrypt-verify": "dist/cli/certcrypt-verify.js"
+  },
+  "files": [
+    "dist/core",
+    "dist/cli",
+    "!dist/**/*.test.js",
+    "!dist/**/*.test.d.ts",
+    "!dist/**/*.test.js.map",
+    "!dist/scripts",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build && npm run test:conformance",
+    "test": "node --import ./dist/core/crypto/provider/register-node.js --test \"dist/**/*.test.js\"",
+    "test:web": "CERTCRYPT_CRYPTO_BACKEND=web node --import ./dist/core/input/register-node-fs.js --test \"dist/**/*.test.js\"",
+    "test:conformance": "node --import ./dist/core/crypto/provider/register-node.js dist/scripts/run-conformance.js",
+    "test:conformance:web": "CERTCRYPT_CRYPTO_BACKEND=web node --import ./dist/core/input/register-node-fs.js dist/scripts/run-conformance.js",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^5.4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@noble/curves": "^2.0.1",
+    "@noble/hashes": "^2.0.1"
+  },
+  "optionalDependencies": {
+    "@noble/post-quantum": "^0.6.0"
+  }
+}

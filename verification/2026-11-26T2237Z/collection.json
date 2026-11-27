@@ -1,0 +1,509 @@
+{
+  "repository": "certcrypt-verifier-toolkit-js",
+  "certification": "2026-11-26T2237Z",
+  "issued_under": "rules/2026-01",
+  "collection_profile": "subject.collection/1",
+  "leaf_profile": "subject.binary/1",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha3_256": "15f9c41cf0b6674528a0c4a19f90b63f64328ad063d04b5818a8d9147cd9fbcd"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "sha3_256": "7d0ada84d0092ba2067988989cfd6cc43f1ab127b08671553575cd43cd98fa18"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha3_256": "056da9e958498c1610455032ca2c51b860fcc5734083a1274b1185c4d59fae7c"
+    },
+    {
+      "path": ".gitignore",
+      "sha3_256": "e3fe0245a23071dd9e9d610494460c67a4aaa1073ed3d749dda62f24bb052e42"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha3_256": "e7d94673ba343816318a413d3ef299a665f55afd6e6863735da25dc9544cf993"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha3_256": "f77aa5fd7d847624adc4765d93f96e6fa46d05089f1a7599e851468ea8546d99"
+    },
+    {
+      "path": "LICENSE",
+      "sha3_256": "781bb118a03ab698f629da9d9d2cb11112fbb43d8a0af960ad9c4942088ccdc7"
+    },
+    {
+      "path": "README.md",
+      "sha3_256": "38042534cc4cf7463ff24e91ac2c1f7e2a15049b3a27a7c90e631fa45b052c6d"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha3_256": "760068adef3571e726758d0bac926506fba304def5b4ee4db6d9d91ccddfec02"
+    },
+    {
+      "path": "cli/certcrypt-verify.test.ts",
+      "sha3_256": "6d3367538ecb72a6ac833ef9cfd2aa1af64af3563bd3b63acc85f0c8eca694fb"
+    },
+    {
+      "path": "cli/certcrypt-verify.ts",
+      "sha3_256": "d9c43bf3724ed4705af7dd5f79b714e1867a8b00f402c72d60b7910ebe83c3a7"
+    },
+    {
+      "path": "core/config/certcrypt-foundation.ts",
+      "sha3_256": "9e2fde7257602c08ce6eca589c11701a080e2f9cd7b40ff6a8658c2f758c7882"
+    },
+    {
+      "path": "core/config/default.ts",
+      "sha3_256": "684c1de9ea6a266a4309ab2a87134132c209b37af3514bbb928464928b95222c"
+    },
+    {
+      "path": "core/config/test-keys.ts",
+      "sha3_256": "42c1f990a63176129d2465b176416d2593d1ce4559399905f338371595dae455"
+    },
+    {
+      "path": "core/conformance/attestation.test.ts",
+      "sha3_256": "a3fcddb6e68c1c665a5c9b83dc07e99e340a23439577d6646cc0303d7f7e6839"
+    },
+    {
+      "path": "core/conformance/attestation.ts",
+      "sha3_256": "8cbfdca164843980d262ab4a2ef6d18295214e7b403a40ed0605b7abb13d75e4"
+    },
+    {
+      "path": "core/conformance/coverage.test.ts",
+      "sha3_256": "a045a10cab07836ec5010db087014b0e34e9d5ec0f124ea13af44c4105b0e812"
+    },
+    {
+      "path": "core/consistency/vectors.test.ts",
+      "sha3_256": "c62ef4ed49fdb19cf9c5adafc0b807f5495666a6138ba36855e779520eddecf9"
+    },
+    {
+      "path": "core/consistency/verify-consistency.test.ts",
+      "sha3_256": "b953ddc761bcf758ee89899a575f52d032399ebd2949c2a81326f1bd3873de3a"
+    },
+    {
+      "path": "core/consistency/verify-consistency.ts",
+      "sha3_256": "03c038bd1a058d3640a662e3167018da20275f0452d45a236f13d67c36fec36e"
+    },
+    {
+      "path": "core/crypto/canonical-json.ts",
+      "sha3_256": "8178ea6cfea6c34a55d8b48355c27d1122088c99a5df29840e791d3788dcfb51"
+    },
+    {
+      "path": "core/crypto/canonical-subject.test.ts",
+      "sha3_256": "c64398c672180884915ef627c9ecaa003fb8c321fa21130617fb24f56568be53"
+    },
+    {
+      "path": "core/crypto/canonical-subject.ts",
+      "sha3_256": "7c6ce86fd84c7290e271ab63a1221dee3e74f1abcb9d85e807c6052f100968ea"
+    },
+    {
+      "path": "core/crypto/collection-inclusion.test.ts",
+      "sha3_256": "f8c12294dae13db7ec6c993712a497f3ab01c9ef3e6421003f206bd4c33803b9"
+    },
+    {
+      "path": "core/crypto/collection-merkle.test.ts",
+      "sha3_256": "b5d26c28ffe549fcc21e3fe7975dc181a0a521fa31162c6cd4093c711137d00c"
+    },
+    {
+      "path": "core/crypto/collection-merkle.ts",
+      "sha3_256": "82addcb6d72b09fa90b334a4e220f74fca427f3632e885391b4b86bfcdd40b1d"
+    },
+    {
+      "path": "core/crypto/composite.conformance.test.ts",
+      "sha3_256": "2006d68225749bed333ec7474fd19827d64d05d55a2c8d023d2529d2b64d24b5"
+    },
+    {
+      "path": "core/crypto/composite.ts",
+      "sha3_256": "1b35f6f08ade288c9b0c2d566413ef87d1ae10cd530471de601fa5fdbf19b0fb"
+    },
+    {
+      "path": "core/crypto/digest.ts",
+      "sha3_256": "6decdadfc5a9cfde570c9d0e9deb5cb511e9f150023a29aa064b920849ddc9f3"
+    },
+    {
+      "path": "core/crypto/ecdsa-p256.test.ts",
+      "sha3_256": "15dbd99fefd9b62a0bdc66e0d155a72dc0a8b1694eb84e38f57c7ce747d8ec02"
+    },
+    {
+      "path": "core/crypto/ecdsa-p256.ts",
+      "sha3_256": "ba5679223d68cec282908de6c94b2cbc213cb73e8e9fabb40c416f2eb596b4a5"
+    },
+    {
+      "path": "core/crypto/ed25519.ts",
+      "sha3_256": "ba9ddb7450fa58c46e9f31c08f81f1f8fbcf7fe0196b24ad14b33034480e4ffd"
+    },
+    {
+      "path": "core/crypto/holder-keyset.ts",
+      "sha3_256": "1af3a7d1e701309541561f914e41eadf182b5ad6288a606eb96271bf42e03faf"
+    },
+    {
+      "path": "core/crypto/jcs.ts",
+      "sha3_256": "f6efe9700aee8e5b888e14060ab05a04d533628d80aeaaf64d90ece9dbc7eaeb"
+    },
+    {
+      "path": "core/crypto/merkle.ts",
+      "sha3_256": "84b156e812ea57510fa76fa2ed305bb6a4b582edd6581a749e38f3e2d06245fe"
+    },
+    {
+      "path": "core/crypto/ml-dsa.ts",
+      "sha3_256": "81b7c47821dd947138150e8db643096c0ade12d9938be7eb6c3111914df071df"
+    },
+    {
+      "path": "core/crypto/provider/bytes.test.ts",
+      "sha3_256": "79a7fe773205ffefcad1855c9264a4d1392d7490528a8830ab04ed690faca926"
+    },
+    {
+      "path": "core/crypto/provider/bytes.ts",
+      "sha3_256": "025c26692fac82fc54dedbd436d0c1b7215d7df519c3a0b65b97bc8473fcd692"
+    },
+    {
+      "path": "core/crypto/provider/index.ts",
+      "sha3_256": "48dae0dd4879efe2d6296c2ed025f7e9b9dffcf372cf18f8d4e09c4fdfeaf75a"
+    },
+    {
+      "path": "core/crypto/provider/node.ts",
+      "sha3_256": "97eaa8aa7d5742e85d33547710514639c7cc0c0ef87a33608752133763ed8283"
+    },
+    {
+      "path": "core/crypto/provider/provider.equivalence.test.ts",
+      "sha3_256": "c16f4c9885be4e8b9e4faf995a39158521100ab51d05b46c32971da54d4eef23"
+    },
+    {
+      "path": "core/crypto/provider/register-node.ts",
+      "sha3_256": "95f888114b13ec9ab1d2dd9fd3b919b4b44d15d9fafcf0615ae4523de6bb6ac6"
+    },
+    {
+      "path": "core/crypto/provider/types.ts",
+      "sha3_256": "032f24d7365a13aefaae2a5e46145600c162fffce59f097bb0f03613bd29bd3e"
+    },
+    {
+      "path": "core/crypto/provider/web.ts",
+      "sha3_256": "44f37d16ac5373e4281ec46f552f53dec4e09d9f497c1b6b17c832085ef5d4d2"
+    },
+    {
+      "path": "core/crypto/pseudonym.ts",
+      "sha3_256": "6b8c70cdaff95a2c0ebec1c9f72e73b42a8465e713be25f436fedb1ca93ee28c"
+    },
+    {
+      "path": "core/crypto/subject-json-preconditions.test.ts",
+      "sha3_256": "64a47227ac385856d7e384786863bfe9b3211b5978d76540f5324851d11f931e"
+    },
+    {
+      "path": "core/crypto/subject-json-preconditions.ts",
+      "sha3_256": "8b1c4727db1968ee53ae3a891774fb1d2f7c4799d0774233e25238499aa3e18c"
+    },
+    {
+      "path": "core/domain/verify-domain.ts",
+      "sha3_256": "6f49f49f33354e6462f7a7f4cbab89fbdd445a39b446d869cdedd576a308b50c"
+    },
+    {
+      "path": "core/foundation/anti-equivocation.test.ts",
+      "sha3_256": "e5c11cf4d06c868bf35f19afc20a79c11b84422494959303e8ff30e0407e0a6e"
+    },
+    {
+      "path": "core/foundation/anti-equivocation.ts",
+      "sha3_256": "49e571f2d5a138ca4930c7fc1265b4ad4e5ef5012824b86125e59110280dcbc1"
+    },
+    {
+      "path": "core/foundation/successor-quorum.test.ts",
+      "sha3_256": "d07271ee1efeda9027b3a791e0401c0acb8818c9d58edf7cfdae4b86c20f9270"
+    },
+    {
+      "path": "core/foundation/verify-foundation.test.ts",
+      "sha3_256": "998488072ab0b8f98658841c080669dbf3996abf99c430be1d2cf571a20dcc01"
+    },
+    {
+      "path": "core/foundation/verify-foundation.ts",
+      "sha3_256": "acaf0ddc280f888349d8cb250672527c03b206b22a800728eeba8aa3e7d97320"
+    },
+    {
+      "path": "core/independent/anti-replay.ts",
+      "sha3_256": "f4549f9df9a454a98f8f2d9bab0784bef60b5157868aeca89b8362c578e9a734"
+    },
+    {
+      "path": "core/independent/anti-splicing.ts",
+      "sha3_256": "e0228b81d211cdb52c0776184dbb81d8d462acdbb1cd4f9a4fdac9e3939a00bd"
+    },
+    {
+      "path": "core/independent/capacity-binding.test.ts",
+      "sha3_256": "c98b447190ce531c8d88b4b06e578b3840b6dba7705bb9daf67e0cc3566d53f2"
+    },
+    {
+      "path": "core/independent/capacity-binding.ts",
+      "sha3_256": "bdbc31b08c738c170e8931e3d7810127e0256ee48e5e3e29a5434917ad16916a"
+    },
+    {
+      "path": "core/independent/capacity-evidence-shape.test.ts",
+      "sha3_256": "62c787a9a03e420c225dba6ffbf4825bffc168be6be9d84933f2b8f481e39f27"
+    },
+    {
+      "path": "core/independent/capacity-evidence.test.ts",
+      "sha3_256": "006d6508b8b1f6b5cf1402918abac013894c2fa1034e27c6856903ac8a2a6306"
+    },
+    {
+      "path": "core/independent/capacity-evidence.ts",
+      "sha3_256": "bff11de54787b8ecaa2ece771230ae66ac056187699d58f5c5df95558251613e"
+    },
+    {
+      "path": "core/independent/effective-units.ts",
+      "sha3_256": "2df2626d2f15709024f5347bc37f12f2f081a2dd609f41602d7751cfcb618118"
+    },
+    {
+      "path": "core/independent/issuance-participation.ts",
+      "sha3_256": "6bc7d4bffa3e28a1550f734b79ced0d2df6ba66039c4b918dca609479c418dbe"
+    },
+    {
+      "path": "core/independent/leaf-binding.ts",
+      "sha3_256": "93802b7d83b37425e869995a8617db44828e1634f1544ec3beea1dfc78b44880"
+    },
+    {
+      "path": "core/independent/level1-binding.conformance.test.ts",
+      "sha3_256": "7d811087c29f27b86bbe35aa5fca6fde2bbf3eeebb40a30497015e08a6b8fc2a"
+    },
+    {
+      "path": "core/independent/proof-structure.ts",
+      "sha3_256": "6b7d76fb7939b8a88661e9a60dda978beed8d0ce3367f4b6194361170e3d67f6"
+    },
+    {
+      "path": "core/independent/proof-views.ts",
+      "sha3_256": "c3578d3aae5a21f2609466237262152c6827378f5cf022b82a1ef8858f590f93"
+    },
+    {
+      "path": "core/independent/settlement.test.ts",
+      "sha3_256": "f3144b682d2236e961a8fe34d03e63272321a892843fb0e8a3da24ee7f076d4d"
+    },
+    {
+      "path": "core/independent/settlement.ts",
+      "sha3_256": "ea26e6f6b8fa48effe4fb2586731a8af456cdbae34c5eea61150b291584d4289"
+    },
+    {
+      "path": "core/independent/verify-independent.ts",
+      "sha3_256": "506cec51e3039b3c1001bdb63d7672be21c63184dcb98fc79789de74900320a5"
+    },
+    {
+      "path": "core/independent/verify-proof-signature.test.ts",
+      "sha3_256": "523d1eb459d4c8cdc11c3b74cc141e3a8dcaf47edd71beb9c48866fe1e2e48cb"
+    },
+    {
+      "path": "core/independent/verify-proof-signature.ts",
+      "sha3_256": "578e8b603f870ecdc662d4d3b3785d26d0e37b4fc13191edc1470558f6a6b2c5"
+    },
+    {
+      "path": "core/input/fs-bridge.ts",
+      "sha3_256": "9253bd985358f52f04299f1d5cc6c912991c8267ce48cd4facda690189f49e37"
+    },
+    {
+      "path": "core/input/load-artifacts.ts",
+      "sha3_256": "0814ee04f5b85725a9fac4801a004b3962c22b98c7379305eb4e62a93620f6bc"
+    },
+    {
+      "path": "core/input/load-original-material.ts",
+      "sha3_256": "7792fa3b93730e56b22f547e9cf3e305e7a0d368faf67d9ef223dbcf28f66824"
+    },
+    {
+      "path": "core/input/missing-artifacts.test.ts",
+      "sha3_256": "60a44a4b53232cbb22e7fd86acfde590cdab5260a7dab8bdc0f2896f757a7773"
+    },
+    {
+      "path": "core/input/register-node-fs.ts",
+      "sha3_256": "b00f260672051818076e2ff54057b83c49f005e8836e893d202c03ab0415589d"
+    },
+    {
+      "path": "core/input/resolve-target.ts",
+      "sha3_256": "8cf97f39cb7e6242a70a5296851094f4092c5be3d9813b062dd3015fa770aa08"
+    },
+    {
+      "path": "core/input/strict-json.test.ts",
+      "sha3_256": "730009811c7ec086dc251b2e64edcd20c371245e6db7627b5f14b8c048a4bdf2"
+    },
+    {
+      "path": "core/input/strict-json.ts",
+      "sha3_256": "7c4ae279e882e8df3909e93734bba1761d0e2ba1c6ca68d0ffa3022cbd554a64"
+    },
+    {
+      "path": "core/input/validate.ts",
+      "sha3_256": "fef3de69447422deb7f82fef97c982a729507c30e81e08380bcfef42f93d3d64"
+    },
+    {
+      "path": "core/issued/verify-collection-element.test.ts",
+      "sha3_256": "8cc191de62b00b3adac84f0e86242a5d4a1339143cd0705e14f19e0bdc4c011b"
+    },
+    {
+      "path": "core/issued/verify-collection-element.ts",
+      "sha3_256": "bc6d960c5ae7dbb1c4237a111a75ba91fdd8736cb8a43a1fee443fff07e2c96e"
+    },
+    {
+      "path": "core/issued/verify-issued.test.ts",
+      "sha3_256": "dff849d8a07bd4410cf30304c4857c548de7b29325129a457462421ecdb0d75f"
+    },
+    {
+      "path": "core/issued/verify-issued.ts",
+      "sha3_256": "aae614f615ea183c41e391a27852856611340966cfc1e2dae4e3bb6f3e889635"
+    },
+    {
+      "path": "core/issued/verify-original-material.test.ts",
+      "sha3_256": "563733d879dd44746e8026bae6b45e61c818095db9a30bf87f85a76b6825db97"
+    },
+    {
+      "path": "core/issued/verify-original-material.ts",
+      "sha3_256": "3aff2d57ce0b45f3794ca70ec506e67842bab2ae64472136b5af4c249a592ca4"
+    },
+    {
+      "path": "core/package/verify-package.ts",
+      "sha3_256": "d1bb0a7e6e51b8f9154116991a4151f20536cf712ea51456ec61e1aedbb7a52e"
+    },
+    {
+      "path": "core/production-profile-guard.test.ts",
+      "sha3_256": "98456f1f4554789abb1689c303a7e3fa4f113d0a938bdf5dd03e394b3323c4b5"
+    },
+    {
+      "path": "core/public-api.test.ts",
+      "sha3_256": "221a5277a2df9f2c9da757104aff3317c6c15dabb573f671ef9ae7e880264c0a"
+    },
+    {
+      "path": "core/public-api.ts",
+      "sha3_256": "e3c31254f5f01ffb6bb3d45cf0f2d482b56d5b4b3ae6db28aa28a45cb3c68a2d"
+    },
+    {
+      "path": "core/result/builder.ts",
+      "sha3_256": "6a3d0ecae5a2547470cf7e68ae5463996332a3fbf3442b39beefaae338570e3b"
+    },
+    {
+      "path": "core/result/independent-axis.test.ts",
+      "sha3_256": "058310d52434216414dac3d1946154fa2809384b1b3d43f1859b9446e87153cc"
+    },
+    {
+      "path": "core/result/subject-scope.test.ts",
+      "sha3_256": "5e9fc3c32bffd2f6ac82df2431060db7f373f66b6a9aa49fa240c7d05b48033c"
+    },
+    {
+      "path": "core/rules/verify-corpus.test.ts",
+      "sha3_256": "80d5c443e19f1536f524d5dbb80704508432e26479bef7b9fc0b8507ec8ecb16"
+    },
+    {
+      "path": "core/rules/verify-corpus.ts",
+      "sha3_256": "fd8caf4ffa995c11c3dbea5c828c4e4d7322e47abba9ebf5ac22a576e009f303"
+    },
+    {
+      "path": "core/rules/verify-rules.ts",
+      "sha3_256": "4698b841403c8f6b47815ab1f0287e319ad07c38bf9b03bd367d3715c9596718"
+    },
+    {
+      "path": "core/testing/output-schema-conformance.test.ts",
+      "sha3_256": "a04c02f34b72986d11507d8c44c94c67f4b0af21c795d5617a0a782339169ddf"
+    },
+    {
+      "path": "core/testing/validate-against-schema.ts",
+      "sha3_256": "da8df42419180be6bb90f57e5d1e462c8cc43153f67734ad080e60817e43c83a"
+    },
+    {
+      "path": "core/types/artifacts.ts",
+      "sha3_256": "438b2da79025f7817d2c42869798f09e4b27e988f33075c68c1e3763e926f5a3"
+    },
+    {
+      "path": "core/types/capacity-evidence.ts",
+      "sha3_256": "887d6bb60d1c417dc715d1bc2e506caccc27238893f7402d80e1525a0964f6d0"
+    },
+    {
+      "path": "core/types/check.ts",
+      "sha3_256": "8449e45dbdedfdad7d644107c5441f2991374dba83c8a21762fd40b91855b1f8"
+    },
+    {
+      "path": "core/types/config.ts",
+      "sha3_256": "198cdc19f2392f83713828ea6b255b500ac8a607e009edc0df6a76de54a9a296"
+    },
+    {
+      "path": "core/types/foundation.ts",
+      "sha3_256": "c93c74550f0c12117c3c542f8c51988f017bd7be5bf46fa5a457c5ded772910f"
+    },
+    {
+      "path": "core/types/index.ts",
+      "sha3_256": "0f0eda60b83ce4fdbcbfc023b0655cc6abbdfcf4b228a1851e112f755110ce1d"
+    },
+    {
+      "path": "core/types/proof.ts",
+      "sha3_256": "20500da3abe42c9ea42a2fdb3dbd3bc864ae8a946c94807601e63afff6cefff3"
+    },
+    {
+      "path": "core/types/request.ts",
+      "sha3_256": "8a73ebc79f737a56ece5205100b4ba34927fcb2c18c4137d2e45be806b48ddf3"
+    },
+    {
+      "path": "core/types/result.ts",
+      "sha3_256": "a6ddcd0699e14a300d81ef7cbc539f2fde1b06e2726782d857b38fd6b6e63cab"
+    },
+    {
+      "path": "core/types/settlement-material.ts",
+      "sha3_256": "99fa8c662a5e33b565f236682d99828a63e095ede6364eda49c55d9e50c16ebd"
+    },
+    {
+      "path": "core/verify-node.ts",
+      "sha3_256": "12ba91490be7b9134a4bd87884e6f42679cbc96931308d38c54747bf1b4354fb"
+    },
+    {
+      "path": "core/verify-web.ts",
+      "sha3_256": "41c24e392caba5051f4dc628edae72e8ba1d68485ede56f6fecd21db2639a532"
+    },
+    {
+      "path": "core/verify.ts",
+      "sha3_256": "bd23965a1d79d5304aec919c455b6ed27e2df08801ab92e2277b99f6bfb5c0ef"
+    },
+    {
+      "path": "docs/architecture/repository-layout.md",
+      "sha3_256": "3548ebf9222af7c5f9f2e2728e9cee02954951b6b67151a8739dad9230ccc49f"
+    },
+    {
+      "path": "docs/architecture/verifier-contract.md",
+      "sha3_256": "4a63dad8bcc4ad25ead4536b3ff6db6bc8ded17d64207e8ad6424b81f8dc9825"
+    },
+    {
+      "path": "docs/audit/check-catalog.md",
+      "sha3_256": "fc2295e872b0562f2d65f0492bcce03700f3f07a2f2303a316d3ea7aa70be2da"
+    },
+    {
+      "path": "docs/audit/conformance-map.md",
+      "sha3_256": "38172cc73861cf3159450fc8d3e2218c4c6ab26521c25ffa7dddc98d22e208c8"
+    },
+    {
+      "path": "docs/audit/conformance-status.md",
+      "sha3_256": "46e5000468844a6da793f83fa1c6a5106a80b998fec6329ab480d386c8aa6235"
+    },
+    {
+      "path": "docs/audit/pqc-normative-runtime.md",
+      "sha3_256": "7c96fcdbacbe1fa516280ca6557545402982e33f0bc614ac9aeed718af7334ad"
+    },
+    {
+      "path": "docs/start-here/auditors.md",
+      "sha3_256": "2d3101aa24c5d3d8519edb77e12def941d2aecb2302dcc7f5757640c6f91d1af"
+    },
+    {
+      "path": "docs/start-here/developers.md",
+      "sha3_256": "3cca119db816e78feaa10f674a6994e5ab4690a2fb04f4a7d0602e617bd80fc6"
+    },
+    {
+      "path": "harness/profiles.ts",
+      "sha3_256": "9171e902cdf4b7e59fb929972a6ec4c115ec1d71f61522dba165c5bf6a75b451"
+    },
+    {
+      "path": "package-lock.json",
+      "sha3_256": "6c7e92e1283e450880dff65d175a4c76d4bdc6d621a8af17b290034e0065f8b1"
+    },
+    {
+      "path": "package.json",
+      "sha3_256": "3d11e0ba728ca5480cec04673d4bde0489bd9c5e1cacfd503ba6a2a6c8f857be"
+    },
+    {
+      "path": "scripts/run-conformance.ts",
+      "sha3_256": "3d058d76542007a872c025cb2da75a5f75b4e0173e2d4338a65933c1a639b909"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha3_256": "e462782688b97e7bcc127b2908e9d9c6b34f6461e998e45ed46701d6239411ee"
+    }
+  ],
+  "declared_cardinality": 124,
+  "collection_root": "a65f21dd74122f20c1d3e2aed228ca416cde6a061028301cb4975faf6c61dd21",
+  "subtree_root": "2d961c8112d7ebeb0bc7d2c9159d85ff7269b121099471b20c1f74f922b64089",
+  "procedure": "verification/README.md"
+}

@@ -1,0 +1,12 @@
+# CERTCRYPT repository ownership
+
+# Default owners for everything not matched below.
+# More specific rules further down override this catch-all.
+* @CERTCRYPT/core-maintainers
+
+/.gitignore @CERTCRYPT/core-maintainers
+/.github/CODEOWNERS @CERTCRYPT/core-maintainers
+/.github/workflows/ @CERTCRYPT/core-maintainers
+/SECURITY.md @CERTCRYPT/core-maintainers
+/LICENSE @CERTCRYPT/core-maintainers
+/README.md @CERTCRYPT/core-maintainers

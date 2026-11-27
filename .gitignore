@@ -1,0 +1,76 @@
+# Secrets and key material
+# ·················
+# This toolkit holds no secrets — it verifies, and cannot produce a signature.
+# These patterns stay broad anyway: a false positive costs one `git add -f`, a
+# false negative is unrecoverable once pushed.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+*.secrets.*
+*.local.*
+# Never commit non-public notes.
+*.private.*
+*.internal.*
+
+# Build output
+# ·················
+# `dist/` is not committed but IS published: what ships to npm is governed by the
+# `files` allowlist in package.json, not by this file.
+#
+# It also carries the conformance attestation. `core/conformance/attestation.ts`
+# is committed with a null default; the real value is emitted into dist/ by the
+# run that executed the vectors (`npm run test:conformance`). Keeping dist/ out
+# of git is what stops that version from becoming a hand-editable string in the
+# source tree — see the module's header for why that distinction matters.
+dist/
+*.tsbuildinfo
+
+# Dependencies
+# ·················
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/install-state.gz
+
+# Test and coverage output
+# ·················
+coverage/
+.nyc_output/
+
+# Logs
+# ·················
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors and OS
+# ·················
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Scratch
+# ·················
+tmp/
+.tmp/
+*.bak
+# Stray tooling output: this is a library, not a Next.js app.
+.next/
